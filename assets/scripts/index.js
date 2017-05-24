@@ -43,5 +43,7 @@ $(() => {
     aboutArrow.classList.add("bounce-class");
   });
 
+  window.addEventListener('DOMContentLoaded', carousel.init());
+
 })
 require('./example')

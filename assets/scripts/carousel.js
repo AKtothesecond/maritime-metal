@@ -74,4 +74,8 @@
     //   document.body.className += 'ready';
     // }, 0);
   };
-  window.addEventListener('DOMContentLoaded', init);
+  // window.addEventListener('DOMContentLoaded', init);
+
+  module.exports = {
+    init
+  }
