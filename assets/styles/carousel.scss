@@ -1,9 +1,21 @@
 .what-we-buy {
-    background-color: #183656;
+    background-color: rgba(0, 35, 75, 0.8);
     /* margin: 240px auto 0; */
     height: 400px;
     padding-top: 90px;
     position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 87, 175, 0.7);
+      z-index: -1;
+
+    }
 
   h1 {
     text-align: center;
@@ -121,15 +133,18 @@
 .navigation-button {
   border: none;
   background: transparent;
-  font-size: 40px;
+  font-size: 60pt;
   height: 40px;
   margin-top: 80px;
   color: white;
+
   &:nth-of-type(1){
     float: right;
+    margin-right: 90px;
   }
   &:nth-of-type(2){
     float: left;
+    margin-left: 90px;
   }
 }
 @media (max-width: 900px) {

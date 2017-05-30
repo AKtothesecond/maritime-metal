@@ -17,7 +17,7 @@ $(() => {
             {duration: 800},
             100);
   sr.reveal('.sr');
-  sr.reveal('.what-we-buy');
+  sr.reveal('.what-we-buy .container');
 
   // add clickhandlers for mobile what we buy
   clickhandlers.addHandlers();
@@ -63,7 +63,7 @@ $(() => {
 // MOBILE CONTACT ARROW ANIMATION
   contactMobileBtn.addEventListener("mouseenter", function( event )   {
     // highlight the mouseenter target
-    contactMobileDropDown.style.height = "340px";
+    contactMobileDropDown.style.height = "400px";
     contactMobileArrow.classList.remove("bounce-class");
   });
 
