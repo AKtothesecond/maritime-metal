@@ -1,18 +1,4 @@
-$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import 'reset';
-@import 'vars';
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,500,600,700,800,900|Oswald:200,400,500,600');
-@import 'carousel';
-
-
-$green: RGBA(37, 174, 48, 1.00);
-$lightgreen: RGBA(15, 243, 4, 1.00);
-$blue: RGBA(5, 61, 110, 1.00);
-$bg-green: RGBA(37, 174, 48, 0.7);
-$bg-blue: RGBA(5, 61, 110, 0.7);
-$lightgray: RGBA(211, 211, 211, 1.00);
-$main-font: 'Montserrat', sans-serif;
+@media (max-width: 1100px) {
 
 body{
   font-family: 'Montserrat', sans-serif;
@@ -36,7 +22,7 @@ body{
     left: 0px;
     right: 0px;
     margin: auto;
-    width: 1200px;
+    width: 900px;
     /* margin: 0 auto; */
     // border: 1px solid red;
     /* z-index: 1; */
@@ -76,35 +62,34 @@ body{
 
 .sell-point {
     position: relative;
-    width: 190px;
+    width: 160px;
     /* border: 1px solid lightgreen; */
     display: inline-block;
     margin-right: 5%;
 
 
   h3 {
-      font-size: 54pt;
+      font-size: 36pt;
       font-weight: 600;
       margin-bottom: 10px;
       color: white;
   }
   p {
-   font-size: 15pt;
-   line-height: 27px;
+   font-size: 12pt;
+   line-height: 24px;
    font-weight: 200;
    color: rgb(193, 193, 193);
   }
   span {
     display: block;
     position: absolute;
-    right: -40px;
+    right: -37px;
     top: 0px;
     /* float: right; */
     background-color: #0ff304;
-    height: 150px;
-    width: 2px;
+    height: 112px;
+    width: 1px;
     transform: rotateZ(26deg);
-    z-index: 3;
     #mobile-slash{
       display: none;
     }
@@ -123,21 +108,21 @@ body{
       height: 100px;
       img{
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         }
         p {
         font-family: 'Oswald' , sans-serif;
         letter-spacing: 1px;
         color: white;
-        font-size: 11pt;
+        font-size: 9pt;
         margin-top: 20px;
         }
     }
 }
 
 .location, .email{
-  width: 200px;
+  width: 170px;
 }
 .office-phone, .fax{
   width: 140px;
@@ -177,7 +162,7 @@ svg{
 .about-tab {
     position: relative;
     // border: 1px solid cyan;
-    margin: -123px auto;
+    margin: -100px auto;
     /* z-index: 2; */
     p {
     font-family: Oswald;
@@ -193,7 +178,7 @@ svg{
     /* border: 1px solid green; */
   }
     .svg-about-tab {
-    width: 240px;
+    width: 190px;
     display: block;
     margin: -0 auto;
     /* filter: drop-shadow(0px 5px 3px #000); */
@@ -205,39 +190,38 @@ svg{
   text-align: center;
   z-index: 1;
    img {
-     display: inline-block;
-     width: 35px;
-     height: 50px;
-     margin: 0px 31px;
+    display: inline-block;
+    width: 35px;
+    height: 50px;
+    margin: 0px 25px;
   }
 }
 
 .left {
     position: absolute;
-    bottom: 80px;
+    bottom: 40px;
     left: 40px;
     transform: rotateZ(15deg);
 }
 .right {
     position: absolute;
-    bottom: 80px;
+    bottom: 40px;
     right: 40px;
     transform: rotateZ(-18deg);
 }
 
 .about {
-  width: 100%;
-  text-align: center;
-  height: 0px;
-  overflow: hidden;
-  background-color: #0d2f55;
-  display: block;
-  position: relative;
-  top: 10px;
-  /* background-repeat: no-repeat; */
-  /* background-size: 40%; */
-  /* background-position: right; */
-  transition: .3s;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background-color: #0d2f55;
+    display: flex;
+    justify-content: center;
+    // background-image: url(/assets/img/KRADIN-BOYS.jpg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right;
+    transition: .3s;
 
 //   .svg-about-tab-base{
 //     z-index: 5;
@@ -246,22 +230,22 @@ svg{
 //     height: 190px;
 // }
    div {
-    //  border: 1px solid white;
-     position: relative;
-     margin-left: 0px;
-     top: 180px;
-     display: inline-block;
-     /* justify-content: center; */
-     /* border-right: 1px solid; */
+    /* border: 1px solid white; */
+    position: relative;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-right: 1px solid; */
     &:before {
-      content: '';
-      width: 1px;
-      height: 280px;
-      background-color: lightgray;
-      position: absolute;
-      top: -90px;
-      right: -30px;
-      bottom: 0;
+    content: '';
+    width: 1px;
+    height: 280px;
+    background-color: lightgray;
+    position: absolute;
+    top: 110px;
+    right: -30px;
+    bottom: 0;
   }
     p:nth-of-type(1) {
       color: #ffffff;
@@ -281,17 +265,16 @@ svg{
 }
 
 .about-txt {
-  // border: 1px solid yellow;
-  color: white;
-  text-align: left;
-  position: relative;
-  top: 260px;
-  // text-align: center;
-  width: 550px;
-  display: inline-block;
-  font-weight: 100;
-  line-height: 22px;
-  margin-left: 60px;
+    /* border: 1px solid yellow; */
+    color: white;
+    /* text-align: center; */
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 100;
+    line-height: 22px;
+    margin-left: 60px;
   }
 
 .bounce-class{
@@ -329,11 +312,11 @@ svg{
 .svg-about-tab-base {
     display: inline-block;
     position: absolute;
-    top: -10px;
+    top: -80px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 240px;
+    width: 190px;
     z-index: 1;
 }
 
@@ -364,9 +347,9 @@ svg{
         &:before {
           content: '';
           position: absolute;
-          top: -12px;
+          top: -70px;
           bottom: 0;
-          left: -35px;
+          left: 0;
           right: 0;
           margin: auto;
           height: 330px;
@@ -463,69 +446,6 @@ svg{
     }
 }
 
-.mobile-slide {
-  display: inline-block;
-  margin: 0 auto;
-  width: 180px;
-  height: 180px;
-  border: 2px solid white;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  background: RGBA(5, 61, 110, 0.7);
-  position: relative;
-  p:nth-of-type(1){
-    font-size: 20px;
-    position: absolute;
-    left: 10px;
-    top: 5px;
-  }
-  p:nth-of-type(2){
-    margin-top: 45px;
-    font-size: 21px;
-    color: $neon-green;
-  }
-  position: relative;
-  p:nth-of-type(3){
-    margin-top: 30px;
-  }
-  position: relative;
-  p:nth-of-type(4){
-    position: absolute;
-    bottom: 15px;
-    margin: auto;
-    right: 0;
-    left: 0;
-    color: $neon-green;
-    font-size: 22px;
-  }
 }
 
-.what-we-buy-mobile {
-  overflow: hidden;
-  width: 180px;
-  height: 250px;
-  margin: 0 auto;
-   .slide-container {
-    width: 2024px;
-    position: relative;
-    left: 0px;
-    transition: .3s;
-  }
-}
-
-.slideshow-buttons {
-  text-align: center;
-  margin-top:10px;
-  button {
-    border: 1px solid white;
-    font-size: 20px;
-    width: 80px;
-    background: transparent;
-    color: white;
-
-  }
-}
-
-
-@import 'mid-width-1100px';
+@import 'mobile-360px';

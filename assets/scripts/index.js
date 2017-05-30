@@ -33,7 +33,7 @@ $(() => {
   // this handler will be executed only once when the cursor moves over the unordered list
   aboutTab.addEventListener("mouseenter", function( event )   {
     // highlight the mouseenter target
-    about.style.height = "500px";
+    about.style.height = "700px";
     aboutArrow.classList.remove("bounce-class");
   });
   aboutTab.addEventListener("mouseout", function( event )   {
