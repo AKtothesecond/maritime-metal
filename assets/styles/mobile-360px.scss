@@ -39,7 +39,8 @@ body{
     display: inline-block;
     background-color: rgba(0, 35, 75, 0.8);
     width: 100%;
-    height: 660px;
+    height: 655px;
+    overflow: hidden;
 
   &:before {
     content: '';
@@ -58,8 +59,9 @@ body{
     width: 250px;
   }
   .contact-btn-mobile{
-    width: 30%;
-    height: 20px;
+    display: block;
+    width: 31%;
+    height: 60px;
     margin: 0 auto;
     p {
       text-align: center;
@@ -76,7 +78,7 @@ body{
 .sell-point-wrapper {
     /* border: 1px solid yellow; */
     text-align: center;
-    margin-top: 50px;
+    margin-top: 24px;
 }
 
 .sell-point {
@@ -119,11 +121,13 @@ body{
 }
 
 .contact-wrapper {
-    // border: 1px solid yellow;
-    text-align: center;
-    margin-top: 20px;
-    height: 0px;
-    overflow: hidden;
+  text-align: center;
+  margin-top: 5px;
+  background-color: #05264a;
+  height: 0px;
+  overflow: hidden;
+  transition: .2s;
+  // height: 340px;
 
     div{
       display: block;
@@ -146,6 +150,7 @@ body{
 
 .location, .email{
   width: 150px;
+  padding-top: 10px;
 }
 .office-phone, .fax{
   width: 140px;
@@ -185,7 +190,7 @@ svg{
 .about-tab {
     position: relative;
     // border: 1px solid cyan;
-    margin: -107px auto;
+    margin: -101px auto;
     /* z-index: 2; */
     p {
     font-family: Oswald;
@@ -253,14 +258,13 @@ svg{
 // }
    div {
      position: relative;
-     margin-left: 16px;
-     margin-top: 210px;
-     width: 105px;
-     text-align: right;
-     display: inline-block;
-     flex-direction: initial;
-     justify-content: initial;
-     /* border-right: 1px solid; */
+    margin-left: -38px;
+    margin-top: 280px;
+    width: 105px;
+    text-align: right;
+    display: inline-block;
+    flex-direction: initial;
+    justify-content: initial;
     &:before {
       content: '';
       width: 1px;
@@ -289,20 +293,19 @@ svg{
 }
 
 .about-txt {
-  // border: 1px solid yellow;
-  color: white;
-  /* text-align: center; */
-  width: 195px;
-  display: inline-block;
-  float: right;
-  flex-direction: initial;
-  justify-content: initial;
-  font-weight: 100;
-  line-height: 21px;
-  margin-left: initial;
-  margin-right: 21px;
-  margin-top: 67px;
-  font-size: 9pt;
+    color: white;
+    /* text-align: center; */
+    width: 195px;
+    display: inline-block;
+    float: right;
+    flex-direction: initial;
+    justify-content: initial;
+    font-weight: 100;
+    line-height: 21px;
+    margin-left: -20px;
+    margin-right: 65px;
+    margin-top: 145px;
+    font-size: 9pt;
   }
 
 .bounce-class{
@@ -322,6 +325,7 @@ svg{
 .services{
   height: 100%;
   position: relative;
+  top: -2px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1.75), rgba(255, 0, 0, 0) 40.71%);
   text-align: center;
 }
@@ -340,7 +344,7 @@ svg{
 .svg-about-tab-base {
   display: inline-block;
   position: absolute;
-  top: -17px;
+  top: 0px;
   left: 0;
   right: 0;
   margin: auto;
@@ -366,26 +370,24 @@ svg{
       z-index: 1;
     }
       p {
-      font-size: 12pt;
+        font-size: 12pt;
       /* font-weight: 500; */
-      color: rgb(15, 42, 72);
+      color: #0f2a48;
       line-height: 25px;
       width: 72%;
       margin: 50px auto;
         &:before {
           content: '';
-    position: absolute;
-    top: 117px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 530px;
-    width: 90%;
-    border: 9px solid white;
-    box-shadow: 0px 10px 18px 10px rgba(0, 0, 0, 0.7);
-          /* background-color: #0f2a48; */
-          /* z-index: -1; */
+          position: absolute;
+          top: 30px;
+          bottom: 0;
+          left: -20px;
+          right: 0;
+          margin: auto 0;
+          height: 490px;
+          width: 114%;
+          border: 9px solid white;
+        box-shadow: 0px 10px 18px 10px rgba(0, 0, 0, 0.7);
         }
     }
 }
@@ -475,8 +477,5 @@ svg{
     }
 }
 
-.what-we-buy div {
-    display: none;
-}
 // CLOSE MEDIA QUERIE
 }
