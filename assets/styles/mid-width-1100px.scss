@@ -336,6 +336,9 @@ svg{
     margin: auto;
     width: 190px;
     z-index: 1;
+    svg {
+      margin-top: -13px;
+    }
 }
 
 .services-description {
@@ -470,9 +473,9 @@ svg{
   .what-we-buy-mobile {
     display: block;
     overflow: hidden;
-    width: 185px;
+    width: 180px;
     height: 250px;
-    margin: 0 auto;
+    margin: -80px auto 0 auto;
      .slide-container {
       width: 2024px;
       position: relative;
