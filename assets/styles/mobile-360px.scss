@@ -481,5 +481,52 @@ svg{
   display: none;
 }
 
+.what-we-buy-mobile {
+    height: 400px;
+    padding-top: 90px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+
+    }
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: RGBA(15, 243, 4, 1);
+    width: 170px;
+    padding: 15px 5px 15px 8px;
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 30px solid RGBA(15, 243, 4, 1);
+    }
+  }
+}
+
 // CLOSE MEDIA QUERIE
 }
