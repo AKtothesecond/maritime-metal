@@ -574,12 +574,12 @@ footer{
       p {
         color: black;
         text-align: center;
+        margin: 0;
       }
       img {
-        margin: 0;
         height: 40px;
         display: block;
-        margin: 0 auto;
+        margin: 10px auto;
       }
       a {
         text-align: center;
@@ -588,7 +588,7 @@ footer{
     }
   }
   div:nth-of-type(2){
-    color: white;
+    color: rgba(255, 255, 255, .8);
     display: flex;
     justify-content: space-around;
     p {
