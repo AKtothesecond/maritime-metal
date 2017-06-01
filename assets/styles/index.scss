@@ -564,32 +564,36 @@ svg{
 }
 
 footer{
+  // overflow: hidden;
   div:nth-of-type(1){
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
+    width: 100%;
+    text-align: center;
     div {
-      display: flex;
-      flex-direction: column;
-      width: 220px;
-      justify-content: center;
+      display: inline-block;
+      width: 250px;
       p {
         color: black;
         text-align: center;
-        width: 250px;
       }
       img {
+        margin: 0;
         height: 40px;
+        display: block;
+        margin: 0 auto;
       }
       a {
         text-align: center;
+        text-decoration: none;
       }
     }
   }
   div:nth-of-type(2){
-    display: flex;
-    justify-content: space-between;
     color: white;
+    display: flex;
+    justify-content: space-around;
+    p {
+      margin-top: 10px;
+    }
   }
 }
 

@@ -137,6 +137,7 @@
   height: 40px;
   margin-top: 80px;
   color: white;
+  outline: none;
 
   &:nth-of-type(1){
     float: right;
@@ -147,6 +148,3 @@
     margin-left: 90px;
   }
 }
-// @media (max-width: 900px) {
-//   #carousel, .navigation-button { display: none;}
-// }
