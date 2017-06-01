@@ -530,5 +530,28 @@ svg{
   }
 }
 
+footer {
+  div:nth-of-type(1) {
+    display: block;
+    margin: 0 auto;
+    div {
+      margin: 0 auto 10px;
+      p {
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  }
+  div:nth-of-type(2){
+    display: block;
+    color: black;
+    text-align: center;
+    p {
+    font-size: 10px;
+    margin-bottom: 10px;
+    }
+  }
+}
+
 // CLOSE MEDIA QUERIE
 }

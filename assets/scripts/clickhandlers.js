@@ -12,7 +12,6 @@ let contactMobileArrow = document.querySelector(".contact-btn-mobile svg");
 let contactMobileBtn = document.querySelector(".contact-btn-mobile");
 let contactMobileDropDown = document.querySelector(".contact-wrapper");
 let position = 0;
-let count = 0;
 
 // const displayOne = () => {
 //   $('.svg-about-tab-base').css('top', '10px');
@@ -32,8 +31,8 @@ function aboutTabOpen(event){
     $(aboutTabBase).css("top", "-80px")
   } else {
     $(aboutTabBaseDesktop).css("top", "-75px")
+    $(aboutTabBaseDesktop).css("top", "-75px")
   }
-  count ++
 }
 
 // handle about section closing on click or hover depending on mobile or desktop
@@ -49,20 +48,19 @@ function aboutTabClose(event){
     } else {
       $(aboutTabBaseDesktop).css("top", "5px")
     }
-    count ++
 }
 
-// handle about section opening on click mobile
-function contactOpen(event){
-  contactMobileDropDown.style.height = "400px";
-  contactMobileArrow.classList.remove("bounce-class");
+const clickOrHoverAbout = () => {
+  if ($(window).width() <= 1100){
+    $(aboutTab).on('click', aboutTabOpen);
+    $(about).on('click', aboutTabClose);
+  } else {
+    console.log('hello');
+    $(aboutTab).on('mouseenter', aboutTabOpen);
+    $(aboutTab).on('mouseleave', aboutTabClose);
+  }
 }
 
-// handle about section closing on click mobile
-function contactClose(event){
-  contactMobileDropDown.style.height = "0px";
-  contactMobileArrow.classList.add("bounce-class");
-}
 
 /////// HOW I THINK ABOUT EVENTS SHOULD RESEMBLE //////
 
@@ -117,21 +115,23 @@ function contactClose(event){
 // }
 //////////////////// end about events //////////////////////
 
-
-const clickOrHoverAbout = () => {
-  if ($(window).width() <= 1100){
-    $(aboutTab).on('click', aboutTabOpen);
-    // $(aboutTab).on('click', aboutTabClose)
-  } else {
-    $(aboutTab).on('mouseenter', aboutTabOpen);
-    $(aboutTab).on('mouseleave', aboutTabClose);
-  }
-}
-
 const clickOrHoverContact = () =>{
     $(contactMobileBtn).on('click', contactOpen)
     $(contactMobileDropDown).on('click', contactClose)
 }
+
+// handle about section opening on click mobile
+function contactOpen(event){
+  contactMobileDropDown.style.height = "400px";
+  contactMobileArrow.classList.remove("bounce-class");
+}
+
+// handle about section closing on click mobile
+function contactClose(event){
+  contactMobileDropDown.style.height = "0px";
+  contactMobileArrow.classList.add("bounce-class");
+}
+
 
 function nextSlide(){
     position -= 184;
