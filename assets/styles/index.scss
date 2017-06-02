@@ -564,15 +564,16 @@ svg{
 }
 
 footer{
-  // overflow: hidden;
+  margin-top: 10px;
   div:nth-of-type(1){
     width: 100%;
     text-align: center;
     div {
       display: inline-block;
       width: 250px;
+      background-color: $blue;
       p {
-        color: black;
+        color: white;
         text-align: center;
         margin: 0;
       }
