@@ -20,20 +20,20 @@ $(() => {
   sr.reveal('.sr');
   sr.reveal('.what-we-buy .container');
 
-  // add clickhandlers for mobile what we buy
+  // add clickhandlers/hover functions
   clickhandlers.addHandlers();
+  clickhandlers.clickOrHoverAbout();
+  clickhandlers.clickOrHoverContact();
 
   let aboutArrow = document.querySelector(".svg-about-tab-base svg polygon:nth-of-type(2)");
   let aboutArrowDesktop = document.querySelector(".svg-about-tab-base-desktop svg polygon:nth-of-type(2)");
   let contactMobileArrow = document.querySelector(".contact-btn-mobile svg");
-  let contactMobileBtn = document.querySelector(".contact-btn-mobile");
-  let contactMobileDropDown = document.querySelector(".contact-wrapper");
 
 
+  // ARROW ANIMATION
   aboutArrow.classList.add("bounce-class");
   aboutArrowDesktop.classList.add("bounce-class");
   contactMobileArrow.classList.add("bounce-class");
-  // aboutArrowDesktop.style.top = "0px";
   $(".svg-about-tab-base-desktop").offset({top:"0;"});
 
 // add hover effect to about section
@@ -78,3 +78,4 @@ $(() => {
 
 })
 require('./example')
+})
