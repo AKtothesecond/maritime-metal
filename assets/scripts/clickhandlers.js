@@ -62,63 +62,6 @@ const clickOrHoverAbout = () => {
 }
 
 
-/////// HOW I THINK ABOUT EVENTS SHOULD RESEMBLE //////
-
-// const displayTablet = () => {
-//   $('.svg-about-tab-base').css('top', '10px');
-//   $('.about').css('height', '630px');
-// }
-
-// const displayMobile = () => {
-//   $('.svg-about-tab-base').css('top', '-80px');
-//   $('.about').css('height', '630px');
-// }
-
-// const aboutEvents = () => {
-//   if ($(window).width() <= 1100){
-//       $(aboutTab).click(function() {
-//         $('.about').toggle( // YOU COULD PASS displayTablet(); TO BE TOGGLED
-//         $(this).css('top','630px');
-//         $('.svg-about-tab-base').css('height','10px');
-//       });
-//   }
-//   else if ($(window).width() <= 450){
-//     $(aboutTab).click(function() {
-//       $('.about').toggle( // YOU COULD PASS displayMobile(); TO BE TOGGLED
-//       $(this).css('top','630px');
-//       $('.svg-about-tab-base').css('height','10px');
-//     });
-//   }
-//   else {
-//     $(aboutTab).on('mouseenter', aboutTabOpen);
-//     $(aboutTab).on('mouseleave', aboutTabClose);
-//   }
-// };
-
-////// You could toggleClass with these CSS classes ////////////////
-// .about-open-tablet {
-//   .about{
-//   height: 630px;
-// }
-//   &.services .svg-about-tab-base{
-//     top: 10px;
-//   }
-// }
-
-// .about-open-mobile {
-//   .about{
-//   height: 630px;
-// }
-//   &.services .svg-about-tab-base{
-//     top: 10px;
-//   }
-// }
-//////////////////// end about events //////////////////////
-
-const clickOrHoverContact = () =>{
-    $(contactMobileBtn).on('click', contactOpen)
-    $(contactMobileDropDown).on('click', contactClose)
-}
 
 // handle about section opening on click mobile
 function contactOpen(event){
@@ -132,6 +75,11 @@ function contactClose(event){
   contactMobileArrow.classList.add("bounce-class");
 }
 
+// add click events for contact section on mobile
+const clickOrHoverContact = () =>{
+  $(contactMobileBtn).on('click', contactOpen)
+  $(contactMobileDropDown).on('click', contactClose)
+}
 
 function nextSlide(){
     position -= 184;
@@ -154,10 +102,23 @@ const addHandlers = () => {
   $('.slideshow-previous').on('click', prevSlide);
 }
 
+const safariCheck = () => {
+    let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+    if (isSafari){
+      $('.navigation-button').hide();
+      $('.container').hide();
+      $('.what-we-buy-mobile').show();
+      $(aboutTabBaseDesktop).css('position', 'absolute');
+      $('.slide-container').css('width', '2035px');
+      // $('.what-we-buy-mobile').css('width', '1814px');
+    }
+}
+
 
 
 module.exports = {
   addHandlers,
   clickOrHoverAbout,
   clickOrHoverContact,
+  safariCheck,
 }

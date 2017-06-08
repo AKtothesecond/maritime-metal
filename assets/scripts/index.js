@@ -23,6 +23,7 @@ $(() => {
   clickhandlers.addHandlers();
   clickhandlers.clickOrHoverAbout();
   clickhandlers.clickOrHoverContact();
+  clickhandlers.safariCheck();
 
   let aboutArrow = document.querySelector(".svg-about-tab-base svg polygon:nth-of-type(2)");
   let aboutArrowDesktop = document.querySelector(".svg-about-tab-base-desktop svg polygon:nth-of-type(2)");
@@ -34,4 +35,5 @@ $(() => {
   aboutArrowDesktop.classList.add("bounce-class");
   contactMobileArrow.classList.add("bounce-class");
   $(".svg-about-tab-base-desktop").offset({top:"0;"});
+
 })
