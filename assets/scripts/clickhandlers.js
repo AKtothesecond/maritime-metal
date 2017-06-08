@@ -110,7 +110,7 @@ const safariCheck = () => {
       $('.what-we-buy-mobile').show();
       $(aboutTabBaseDesktop).css('position', 'absolute');
       $('.slide-container').css('width', '2035px');
-      // $('.what-we-buy-mobile').css('width', '1814px');
+      $('.what-we-buy-mobile').css('width', '181px');
     }
 }
 
