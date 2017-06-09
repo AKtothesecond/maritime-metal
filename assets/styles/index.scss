@@ -180,7 +180,7 @@ svg{
 .about-tab {
     position: relative;
     // border: 1px solid cyan;
-    margin: -123px auto;
+    margin: -130px auto;
     /* z-index: 2; */
     p {
     font-family: Oswald;
@@ -320,34 +320,6 @@ svg{
   // border: 1px solid yellow;
 }
 
-
-// background: white; /* For browsers that do not support gradients */
-// background: -webkit-linear-gradient(top, rgba(255,0,0,0), rgb(255, 255, 255));
-//   background: -o-linear-gradient(top, rgba(255,0,0,0), rgba(255, 255, 255));
-//   background: -moz-linear-gradient(top, rgba(255,0,0,0), rgba(255, 255, 255));
-//   background: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 255, 255));
-//
-//
-//   background: red; /* For browsers that do not support gradients */
-//     background: -webkit-linear-gradient(left,rgba(255,0,0,0),transparent); /*Safari 5.1-6*/
-//     background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
-//     background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
-//     background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
-//
-//
-// linear-gradient(180deg, white, transparent);
-// .services > img {
-//   display: block;
-//   position: absolute;
-//   top: -105px;
-//   left: 0;
-//   right: 0;
-//   margin: auto;
-//   width: 190px;
-//   z-index: 1;
-// }
-
-
 .services .svg-about-tab-base-desktop {
   display: inline-block;
 }
@@ -365,10 +337,6 @@ svg{
     width: 240px;
     z-index: 1;
 }
-
-
-
-
 
 .services-description {
     position: relative;
@@ -565,37 +533,57 @@ svg{
 
 footer{
   margin-top: 10px;
-  div:nth-of-type(1){
+  .footer-contact-wrapper {
     width: 100%;
     text-align: center;
+    background-color: white;
+    height: 140px;
     div {
       display: inline-block;
-      width: 250px;
-      background-color: $blue;
+      width: 218px;
+      margin-top: 20px;
+      color: blue;
+      }
       p {
-        color: white;
+        color: #073d6c;
         text-align: center;
         margin: 0;
+        font-family: 'Oswald';
+        letter-spacing: 0px;
       }
       img {
         height: 40px;
-        display: block;
+        display: inline-block;
         margin: 10px auto;
       }
       a {
         text-align: center;
         text-decoration: none;
+        }
+      .footer-logo{
+          display: inline-block;
+          overflow: hidden;
+
+          img{
+            display: none;
+          }
       }
     }
-  }
-  div:nth-of-type(2){
-    color: rgba(255, 255, 255, .8);
-    display: flex;
-    justify-content: space-around;
+  .copyright-bar{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #404040;
+    text-align: center;
     p {
-      margin-top: 10px;
+      display: inline-block;
+    padding: 10px 20px;
+    font-weight: 100;
     }
   }
+}
+
+.footer-symbol{
+  display: inline-block;
+  position: absolute;
 }
 
 
