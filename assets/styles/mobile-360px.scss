@@ -531,24 +531,33 @@ svg{
 }
 
 footer {
-  div:nth-of-type(1) {
+  .footer-contact-wrapper {
     display: block;
     margin: 0 auto;
+    height: 440px;
     div {
-      margin: 0 auto 10px;
+      display: inline-block;
+    width: 318px;
+    margin-top: 20px;
+    img {
+    height: 40px;
+    display: inline-block;
+    margin: 10px auto;
+}
       p {
         font-size: 15px;
         text-align: center;
       }
     }
   }
-  div:nth-of-type(2){
+  .copyright-bar {
     display: block;
     color: black;
     text-align: center;
     p {
-    font-size: 10px;
-    margin-bottom: 10px;
+    font-size: 12px;
+    /* margin-bottom: 10px; */
+    color: white;
     }
   }
 }

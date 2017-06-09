@@ -180,7 +180,7 @@ svg{
 .about-tab {
     position: relative;
     // border: 1px solid cyan;
-    margin: -123px auto;
+    margin: -130px auto;
     /* z-index: 2; */
     p {
     font-family: Oswald;
@@ -565,36 +565,57 @@ svg{
 
 footer{
   // overflow: hidden;
-  div:nth-of-type(1){
+  .footer-contact-wrapper {
     width: 100%;
     text-align: center;
+    background-color: white;
+    height: 140px;
     div {
       display: inline-block;
-      width: 250px;
+    width: 218px;
+    margin-top: 20px;
+    color: blue;
+      }
       p {
-        color: black;
-        text-align: center;
-        margin: 0;
+        color: #073d6c;
+    text-align: center;
+    margin: 0;
+    font-family: 'Oswald';
+    letter-spacing: 0px;
       }
       img {
         height: 40px;
-        display: block;
-        margin: 10px auto;
+    display: inline-block;
+    margin: 10px auto;
       }
       a {
         text-align: center;
         text-decoration: none;
+        }
+      .footer-logo{
+          display: inline-block;
+          overflow: hidden;
+
+          img{
+            display: none;
+          }
       }
     }
-  }
-  div:nth-of-type(2){
-    color: rgba(255, 255, 255, .8);
-    display: flex;
-    justify-content: space-around;
+  .copyright-bar{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #404040;
+    text-align: center;
     p {
-      margin-top: 10px;
+      display: inline-block;
+    padding: 10px 20px;
+    font-weight: 100;
     }
   }
+}
+
+.footer-symbol{
+  display: inline-block;
+  position: absolute;
 }
 
 
