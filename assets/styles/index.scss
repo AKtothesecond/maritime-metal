@@ -540,7 +540,6 @@ footer{
     div {
       display: inline-block;
       width: 218px;
-      margin-top: 20px;
       color: blue;
       }
       p {
@@ -560,11 +559,19 @@ footer{
         text-decoration: none;
         }
       .footer-logo{
-          display: inline-block;
-          overflow: hidden;
-
+        display: inline-block;
+        position: relative;
+        top: 17px;
+        height: 110px;
+        width: 110px;
+        overflow: hidden;
+        border-radius: 270px;
           img{
-            display: none;
+            display: block;
+            position: relative;
+            left: -24px;
+            bottom: 30px;
+            height: 240px;
           }
       }
     }

@@ -486,7 +486,7 @@ svg{
 }
 
 footer div:nth-of-type(1) div {
-  width: 200px;
+  width: 160px;
   p {
     font-size: 13px;
   }
@@ -507,11 +507,27 @@ footer div:nth-of-type(1) div {
     }
   }
   .what-we-buy .container, .navigation-button { display: none;}
-  footer div:nth-of-type(1) div {
-    display: inherit;
-    margin: 0 auto;
-  }
+  footer .footer-contact-wrapper{
+    position: relative;
+    height: 480px;
+      div:nth-of-type(1), div:nth-of-type(2),
+      div:nth-of-type(4), div:nth-of-type(5) {
+        display: inherit;
+        margin: 0 auto;
+        height: 90px;
+      }
+      div:nth-of-type(3){
+        display: inherit;
+        position: absolute;
+        top: 350px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
 }
+
 
 
 @import 'mobile-360px';
